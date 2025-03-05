@@ -9,6 +9,15 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
 }
+
+.block {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-content: center;
+}
+
 .container {
     max-width: 400px;
     margin: auto;
@@ -64,3 +73,68 @@ input {
     height: 15px;
     margin-right: 5px;
 }
+
+.exchange-rates {
+    background-color: #f9f9f9;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.exchange-rates h3 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exchange-rates .date {
+    font-size: 16px;
+    color: #777;
+}
+
+.exchange-rates ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.exchange-rates li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #444;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 12px;
+}
+
+.exchange-rates li:last-child {
+    border-bottom: none;
+}
+
+.exchange-rates .flag {
+    width: 35px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.exchange-rates .currency-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: bold;
+}
+
+.exchange-rates .currency-info span {
+    color: #555;
+}
+
+

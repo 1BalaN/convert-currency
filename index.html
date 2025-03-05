@@ -8,20 +8,26 @@
     <title>Конверт Валюты</title>
 </head>
 <body>
-    <div class="container">
-        <h2>Конвертация валют</h2>
-        <select id="fromCurrency">
-            <option value="BYN">BYN</option>
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="CNY">CNY</option>
-            <option value="RUB">RUB</option>
-        </select>
-        <div class="input-group">
-            <input type="number" id="value" min="0" placeholder="Введите значение">
-            <button class="button">Конвертировать</button>
+    <div class="block">
+        <div id="exchange-rates" class="exchange-rates">
+            <h3>Курсы валют<span class="date"></span></h3>
+            <ul id="rates-list"></ul>
+        </div>    
+        <div class="container">
+            <h2>Конвертация валют</h2>
+            <select id="fromCurrency">
+                <option value="BYN">BYN</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="CNY">CNY</option>
+                <option value="RUB">RUB</option>
+            </select>
+            <div class="input-group">
+                <input type="number" id="value" min="0" placeholder="Введите значение">
+                <button class="button">Конвертировать</button>
+            </div>
+            <div id="results"></div>
         </div>
-        <div id="results"></div>
     </div>
     <script src="./script.js"></script>
 </body>
