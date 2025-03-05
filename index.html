@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Конверт Валюты</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Конвертация валют</h2>
+        <select id="fromCurrency">
+            <option value="BYN">BYN</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="CNY">CNY</option>
+            <option value="RUB">RUB</option>
+        </select>
+        <div class="input-group">
+            <input type="number" id="value" min="0" placeholder="Введите значение">
+            <button class="button">Конвертировать</button>
+        </div>
+        <div id="results"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
